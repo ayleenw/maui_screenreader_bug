@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.ListViewPage"
+             Title="ListViewPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="ListView screenreader test"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Style="{StaticResource HeaderLabel}"
+            SemanticProperties.HeadingLevel="Level1"/>
+
+        <ListView SelectionMode="None">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Peter</x:String>
+                    <x:String>Paul</x:String>
+                    <x:String>Mary</x:String>
+                    <x:String>Mickey</x:String>
+                    <x:String>Carlo</x:String>
+                    <x:String>Daisy</x:String>
+                    <x:String>Fred</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>
